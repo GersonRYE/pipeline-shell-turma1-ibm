@@ -1,0 +1,5 @@
+git init
+echo "#Esta e uma pipeline inicial criando com a turma 1 IBM/Gama" > README.md
+git add .
+git commit -m "versionando doc"
+git push
