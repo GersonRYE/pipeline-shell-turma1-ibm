@@ -2,3 +2,6 @@ job:
   script:
   - echo "Ola alunos estamos aprendendo sobre pipeline"
   - echo "Este e um teste"
+build:
+  script:
+  - echo "mais um teste"
