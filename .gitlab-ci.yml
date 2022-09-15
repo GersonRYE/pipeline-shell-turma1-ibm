@@ -1,7 +1,15 @@
-job:
-  script:
-  - echo "Ola alunos estamos aprendendo sobre pipeline"
-  - echo "Este e um teste"
+#job:
+ # script:
+  #- echo "Ola alunos estamos aprendendo sobre pipeline"
+  #- echo "Este e um teste"
+#build:
+ # script:
+  #- echo "mais um teste"
+
+#permite usar a imagem do java e maven, baixado do hubdocker
+image: maven:3.8.6-openjdk-18
+
 build:
+  stage: build
   script:
-  - echo "mais um teste"
+  - mvn package -Dmaven.test.skip

@@ -3,3 +3,22 @@ echo "#Esta e uma pipeline inicial criando com a turma 1 IBM/Gama" > README.md
 git add .
 git commit -m "versionando doc"
 git push
+
+// gera o .jar
+mvn package
+
+// clicando tab ele mostra os itens contidos no target
+java -jar target/
+
+
+// rodar o jar; "*" o simbolo em aspas duplas indica qualquer arquivo com ".jar" ele busca o arquivo automaticamente
+java -jar target/*.
+
+// tenta roda o teste de unidade
+mvn test
+
+// comando para evitar o arquivo test do projeto
+mvn package -Dmaven.test.skip
+
+// site para criar arquivos .gitignore
+https://www.toptal.com/

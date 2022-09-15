@@ -1,0 +1,8 @@
+-------------------------------------------------------------------------------
+Test set: com.teste.testeUnidade.TesteUnidadeApplicationTests
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.071 s <<< FAILURE! - in com.teste.testeUnidade.TesteUnidadeApplicationTests
+testandoCPFValido  Time elapsed: 0.011 s  <<< FAILURE!
+org.opentest4j.AssertionFailedError: expected: <true> but was: <false>
+	at com.teste.testeUnidade.TesteUnidadeApplicationTests.testandoCPFValido(TesteUnidadeApplicationTests.java:14)
+
