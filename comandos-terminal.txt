@@ -22,3 +22,14 @@ mvn package -Dmaven.test.skip
 
 // site para criar arquivos .gitignore
 https://www.toptal.com/
+
+// este comando vc entra em outro arquivo, e pode fazer conexao com uma nova origem e url para subir no repositorio
+code .git/config
+git push github main 
+va em actions no github para rodar o pipeline
+
+//pesquise sobre comando do gitactions
+git actions run command
+
+// pasta necessaria para funcionar no gitactions
+ mkdir .github e adcionar dentro dela a pasta workflowws

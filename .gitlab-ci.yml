@@ -6,10 +6,21 @@
  # script:
   #- echo "mais um teste"
 
+# GitLab é um dos serviços que roda a pipeline
+
 #permite usar a imagem do java e maven, baixado do hubdocker
 image: maven:3.8.6-openjdk-18
+
+stages:
+- build
+- test
 
 build:
   stage: build
   script:
   - mvn package -Dmaven.test.skip
+
+test:
+  stage: test
+  script:
+  - mvn test
